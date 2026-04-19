@@ -20,7 +20,7 @@ pipeline {
             }
         }
 
-        stage('Run Container') {
+        stage('Run') {
             steps {
                 sh 'docker stop crm || true'
                 sh 'docker rm crm || true'
